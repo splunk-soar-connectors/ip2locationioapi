@@ -216,6 +216,7 @@ class Ip2LocationIoConnector(BaseConnector):
             # pass
 
         # Now post process the data,  uncomment code as you deem fit
+        self.debug_print("response", response)
 
         # Add the response into the data section
         action_result.add_data(response)

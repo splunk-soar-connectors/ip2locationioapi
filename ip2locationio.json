@@ -4,8 +4,6 @@
     "description": "Query IP geolocation data from IP2Location.io API.",
     "type": "information",
     "product_vendor": "IP2Location.io",
-    "logo": "ip2locationio.png",
-    "logo_dark": "ip2locationio_dark.png",
     "product_name": "IP2Location.io",
     "python_version": "3",
     "product_version_regex": ".*",

@@ -25,8 +25,6 @@
             "description": "IP2Location.io API key",
             "data_type": "password",
             "required": true,
-            "value_list": [],
-            "default": "",
             "order": 0,
             "name": "api_key",
             "id": 0
@@ -37,7 +35,6 @@
             "action": "test connectivity",
             "identifier": "test_connectivity",
             "description": "Validate the asset configuration for connectivity using supplied configuration",
-            "verbose": "Validate the asset configuration for connectivity using supplied configuration.",
             "type": "test",
             "read_only": true,
             "parameters": {},
@@ -48,7 +45,6 @@
             "action": "geolocate ip",
             "identifier": "geolocate_ip",
             "description": "Queries IP2Location.io API for geolocation info",
-            "verbose": "Queries IP2Location.io API for geolocation info.",
             "type": "investigate",
             "read_only": true,
             "parameters": {
@@ -104,6 +100,9 @@
         }
     ],
     "pip3_dependencies": {
-        "pypi": []
+        "pypi": [
+            {"module": "requests"},
+            {"module": "beautifulsoup4"}
+        ]
     }
 }

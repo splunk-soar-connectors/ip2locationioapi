@@ -221,6 +221,8 @@ class Ip2LocationIoConnector(BaseConnector):
         # Add the response into the data section
         action_result.add_data(response)
 
+        self.save_progress("Success for: {0}".format(self.get_action_identifier()))
+
         # Add a dictionary that is made up of the most important values from data into the summary
         # summary = action_result.update_summary({})
         # summary['num_data'] = len(action_result['data'])

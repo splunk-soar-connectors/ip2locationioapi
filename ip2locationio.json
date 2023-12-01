@@ -1,0 +1,111 @@
+{
+    "appid": "717277e0-8382-4562-9dc3-1917f38489d2",
+    "name": "IP2Location IO",
+    "description": "Query IP geolocation data from IP2Location.io API.",
+    "type": "information",
+    "product_vendor": "IP2Location.io",
+    "logo": "ip2locationio.png",
+    "logo_dark": "ip2locationio_dark.png",
+    "product_name": "IP2Location.io",
+    "python_version": "3",
+    "product_version_regex": ".*",
+    "publisher": "IP2Location.io",
+    "contributors": [
+        {
+            "name": "IP2Location.io"
+        }
+    ],
+    "license": "Copyright (c) IP2Location.io, 2023",
+    "app_version": "1.0.0",
+    "utctime_updated": "2023-11-30T00:53:41.305116Z",
+    "package_name": "phantom_ip2locationio",
+    "main_module": "ip2locationio_connector.py",
+    "min_phantom_version": "6.1.1.211",
+    "app_wizard_version": "1.0.0",
+    "configuration": {
+        "api_key": {
+            "description": "IP2Location.io API key",
+            "data_type": "string",
+            "required": true,
+            "value_list": [],
+            "default": "",
+            "order": 0,
+            "name": "api_key",
+            "id": 0
+        }
+    },
+    "actions": [
+        {
+            "action": "test connectivity",
+            "identifier": "test_connectivity",
+            "description": "Validate the asset configuration for connectivity using supplied configuration",
+            "verbose": "",
+            "type": "test",
+            "read_only": true,
+            "parameters": {},
+            "output": [],
+            "versions": "EQ(*)"
+        },
+        {
+            "action": "geolocate ip",
+            "identifier": "geolocate_ip",
+            "description": "Queries IP2Location.io API for geolocation info",
+            "verbose": "",
+            "type": "investigate",
+            "read_only": true,
+            "parameters": {
+                "ip": {
+                    "description": "IP to lookup",
+                    "data_type": "string",
+                    "required": true,
+                    "primary": true,
+                    "contains": [
+                        "ip"
+                    ],
+                    "value_list": [],
+                    "default": "",
+                    "order": 0,
+                    "name": "ip",
+                    "id": 1,
+                    "param_name": "ip"
+                }
+            },
+            "output": [
+                {
+                    "data_path": "action_result.parameter.ip",
+                    "data_type": "string",
+                    "contains": [
+                        "ip"
+                    ],
+                    "column_name": "ip",
+                    "column_order": 0
+                },
+                {
+                    "data_path": "action_result.status",
+                    "data_type": "string",
+                    "column_name": "status",
+                    "column_order": 1
+                },
+                {
+                    "data_path": "action_result.message",
+                    "data_type": "string"
+                },
+                {
+                    "data_path": "summary.total_objects",
+                    "data_type": "numeric"
+                },
+                {
+                    "data_path": "summary.total_objects_successful",
+                    "data_type": "numeric"
+                }
+            ],
+            "render": {
+                "type": "table"
+            },
+            "versions": "EQ(*)"
+        }
+    ],
+    "pip3_dependencies": {
+        "pypi": []
+    }
+}

@@ -1,7 +1,7 @@
 {
     "appid": "717277e0-8382-4562-9dc3-1917f38489d2",
     "name": "IP2Location IO",
-    "description": "Query IP geolocation data from IP2Location.io API.",
+    "description": "Query IP geolocation data from IP2Location.io API",
     "type": "information",
     "product_vendor": "IP2Location.io",
     "product_name": "IP2Location.io",
@@ -23,7 +23,7 @@
     "configuration": {
         "api_key": {
             "description": "IP2Location.io API key",
-            "data_type": "string",
+            "data_type": "password",
             "required": true,
             "value_list": [],
             "default": "",
@@ -37,7 +37,7 @@
             "action": "test connectivity",
             "identifier": "test_connectivity",
             "description": "Validate the asset configuration for connectivity using supplied configuration",
-            "verbose": "",
+            "verbose": "Validate the asset configuration for connectivity using supplied configuration.",
             "type": "test",
             "read_only": true,
             "parameters": {},
@@ -48,7 +48,7 @@
             "action": "geolocate ip",
             "identifier": "geolocate_ip",
             "description": "Queries IP2Location.io API for geolocation info",
-            "verbose": "",
+            "verbose": "Queries IP2Location.io API for geolocation info.",
             "type": "investigate",
             "read_only": true,
             "parameters": {

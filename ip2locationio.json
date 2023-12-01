@@ -1,6 +1,6 @@
 {
     "appid": "e2b722d4-bbb6-4a27-86c9-c336b55e5b7b",
-    "name": "IP2Location IO",
+    "name": "ip2locationioapi",
     "description": "Query IP geolocation data from IP2Location.io API",
     "type": "information",
     "product_vendor": "IP2Location.io",

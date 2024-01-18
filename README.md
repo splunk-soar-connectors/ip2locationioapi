@@ -1,9 +1,13 @@
-# Splunk> Phantom
+# IP2Location IO
 
-Welcome to the open-source repository for Splunk> Phantom's ip2locationioapi App.
+Publisher: IP2Location.io
+Contributors: IP2Location.io
+App Version: 1.0.0
+Product Vendor: IP2Location.io
+Product Name: IP2Location.io
+Product Version Supported (regex): ".*"
 
-Please have a look at our [Contributing Guide](https://github.com/Splunk-SOAR-Apps/.github/blob/main/.github/CONTRIBUTING.md) if you are interested in contributing, raising issues, or learning more about open-source Phantom apps.
+Query IP geolocation data from IP2Location.io API.
 
-## Legal and License
-
-This Phantom App is licensed under the Apache 2.0 license. Please see our [Contributing Guide](https://github.com/Splunk-SOAR-Apps/.github/blob/main/.github/CONTRIBUTING.md#legal-notice) for further details.
+Get free IP2Location.io API from from https://www.ip2location.io/pricing for basic geolocation data.
+Below is an example output if you're subscribed to the Security plan.

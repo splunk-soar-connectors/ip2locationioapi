@@ -1,29 +1,27 @@
-[comment]: # "Auto-generated SOAR connector documentation"
 # IP2Location IO
 
-Publisher: IP2Location.io  
-Connector Version: 1.0.1  
-Product Vendor: IP2Location.io  
-Product Name: IP2Location.io  
-Product Version Supported (regex): ".\*"  
-Minimum Product Version: 6.1.1  
+Publisher: IP2Location.io \
+Connector Version: 1.0.1 \
+Product Vendor: IP2Location.io \
+Product Name: IP2Location.io \
+Minimum Product Version: 6.1.1
 
 Query IP geolocation data from IP2Location.io API
 
-[comment]: # File: manual_readme_content.md
-[comment]: #
-[comment]: # Copyright (c) IP2Location.io, 2024
-[comment]: #
-[comment]: # Licensed under the Apache License, Version 2.0 (the "License");
-[comment]: # you may not use this file except in compliance with the License.
-[comment]: # You may obtain a copy of the License at
-[comment]: #
-[comment]: #     http://www.apache.org/licenses/LICENSE-2.0
-[comment]: #
-[comment]: # Unless required by applicable law or agreed to in writing, software distributed under
-[comment]: # the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-[comment]: # either express or implied. See the License for the specific language governing permissions
-[comment]: # and limitations under the License.
+\[comment\]: # File: manual_readme_content.md
+\[comment\]: #
+\[comment\]: # Copyright (c) IP2Location.io, 2024
+\[comment\]: #
+\[comment\]: # Licensed under the Apache License, Version 2.0 (the "License");
+\[comment\]: # you may not use this file except in compliance with the License.
+\[comment\]: # You may obtain a copy of the License at
+\[comment\]: #
+\[comment\]: # http://www.apache.org/licenses/LICENSE-2.0
+\[comment\]: #
+\[comment\]: # Unless required by applicable law or agreed to in writing, software distributed under
+\[comment\]: # the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+\[comment\]: # either express or implied. See the License for the specific language governing permissions
+\[comment\]: # and limitations under the License.
 
 Query IP geolocation data from IP2Location.io API.
 
@@ -31,6 +29,7 @@ Get free IP2Location.io API from from https://www.ip2location.io/pricing for bas
 Below is an example output if you're subscribed to the Security plan.
 
 JSON
+
 <pre>{
 	"ip":"8.8.8.8",
 	"country_code":"US",
@@ -138,47 +137,72 @@ JSON
 }
 </pre>
 
-### Configuration Variables
-The below configuration variables are required for this Connector to operate.  These variables are specified when configuring a IP2Location.io asset in SOAR.
+### Configuration variables
+
+This table lists the configuration variables required to operate IP2Location IO. These variables are specified when configuring a IP2Location.io asset in Splunk SOAR.
 
 VARIABLE | REQUIRED | TYPE | DESCRIPTION
 -------- | -------- | ---- | -----------
-**api_key** |  required  | password | IP2Location.io API key
+**api_key** | required | password | IP2Location.io API key |
 
-### Supported Actions  
-[test connectivity](#action-test-connectivity) - Validate the asset configuration for connectivity using supplied configuration  
-[geolocate ip](#action-geolocate-ip) - Queries IP2Location.io API for geolocation info  
+### Supported Actions
+
+[test connectivity](#action-test-connectivity) - Validate the asset configuration for connectivity using supplied configuration \
+[geolocate ip](#action-geolocate-ip) - Queries IP2Location.io API for geolocation info
 
 ## action: 'test connectivity'
+
 Validate the asset configuration for connectivity using supplied configuration
 
-Type: **test**  
+Type: **test** \
 Read only: **True**
 
 #### Action Parameters
+
 No parameters are required for this action
 
 #### Action Output
-No Output  
+
+No Output
 
 ## action: 'geolocate ip'
+
 Queries IP2Location.io API for geolocation info
 
-Type: **investigate**  
+Type: **investigate** \
 Read only: **True**
 
 #### Action Parameters
+
 PARAMETER | REQUIRED | DESCRIPTION | TYPE | CONTAINS
 --------- | -------- | ----------- | ---- | --------
-**ip** |  required  | IP to lookup | string |  `ip` 
+**ip** | required | IP to lookup | string | `ip` |
 
 #### Action Output
+
 DATA PATH | TYPE | CONTAINS | EXAMPLE VALUES
 --------- | ---- | -------- | --------------
-action_result.parameter.ip | string |  `ip`  |  
-action_result.status | string |  |   success  failed 
-action_result.data | string |  |  
-action_result.summary | string |  |  
-action_result.message | string |  |  
-summary.total_objects | numeric |  |  
-summary.total_objects_successful | numeric |  |  
+action_result.parameter.ip | string | `ip` | |
+action_result.status | string | | success failed |
+action_result.data | string | | |
+action_result.summary | string | | |
+action_result.message | string | | |
+summary.total_objects | numeric | | |
+summary.total_objects_successful | numeric | | |
+
+______________________________________________________________________
+
+Auto-generated Splunk SOAR Connector documentation.
+
+Copyright 2025 Splunk Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and limitations under the License.

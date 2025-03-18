@@ -1,17 +1,17 @@
-[comment]: # File: manual_readme_content.md
-[comment]: #
-[comment]: # Copyright (c) IP2Location.io, 2024
-[comment]: #
-[comment]: # Licensed under the Apache License, Version 2.0 (the "License");
-[comment]: # you may not use this file except in compliance with the License.
-[comment]: # You may obtain a copy of the License at
-[comment]: #
-[comment]: #     http://www.apache.org/licenses/LICENSE-2.0
-[comment]: #
-[comment]: # Unless required by applicable law or agreed to in writing, software distributed under
-[comment]: # the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-[comment]: # either express or implied. See the License for the specific language governing permissions
-[comment]: # and limitations under the License.
+\[comment\]: # File: manual_readme_content.md
+\[comment\]: #
+\[comment\]: # Copyright (c) IP2Location.io, 2024
+\[comment\]: #
+\[comment\]: # Licensed under the Apache License, Version 2.0 (the "License");
+\[comment\]: # you may not use this file except in compliance with the License.
+\[comment\]: # You may obtain a copy of the License at
+\[comment\]: #
+\[comment\]: # http://www.apache.org/licenses/LICENSE-2.0
+\[comment\]: #
+\[comment\]: # Unless required by applicable law or agreed to in writing, software distributed under
+\[comment\]: # the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+\[comment\]: # either express or implied. See the License for the specific language governing permissions
+\[comment\]: # and limitations under the License.
 
 Query IP geolocation data from IP2Location.io API.
 
@@ -19,6 +19,7 @@ Get free IP2Location.io API from from https://www.ip2location.io/pricing for bas
 Below is an example output if you're subscribed to the Security plan.
 
 JSON
+
 <pre>{
 	"ip":"8.8.8.8",
 	"country_code":"US",

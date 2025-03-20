@@ -16,7 +16,7 @@
             "name": "IP2Location.io"
         }
     ],
-    "license": "Copyright (c) IP2Location.io, 2024",
+    "license": "Copyright (c) IP2Location.io, 2024-2025",
     "app_version": "1.0.1",
     "utctime_updated": "2023-11-30T00:53:41.305116Z",
     "package_name": "phantom_ip2locationio",

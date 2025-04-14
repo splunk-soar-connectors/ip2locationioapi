@@ -1,7 +1,7 @@
 # IP2Location IO
 
 Publisher: IP2Location.io \
-Connector Version: 1.0.1 \
+Connector Version: 1.0.2 \
 Product Vendor: IP2Location.io \
 Product Name: IP2Location.io \
 Minimum Product Version: 6.1.1

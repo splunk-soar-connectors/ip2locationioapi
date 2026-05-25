@@ -1,10 +1,10 @@
 # IP2Location IO
 
-Publisher: IP2Location.io \
-Connector Version: 1.0.2 \
-Product Vendor: IP2Location.io \
-Product Name: IP2Location.io \
-Minimum Product Version: 6.1.1
+Publisher: IP2Location.io <br>
+Connector Version: 1.0.2 <br>
+Product Vendor: IP2Location.io <br>
+Product Name: IP2Location.io <br>
+Minimum Product Version: 6.3.0
 
 Query IP geolocation data from IP2Location.io API
 
@@ -165,14 +165,14 @@ VARIABLE | REQUIRED | TYPE | DESCRIPTION
 
 ### Supported Actions
 
-[test connectivity](#action-test-connectivity) - Validate the asset configuration for connectivity using supplied configuration \
+[test connectivity](#action-test-connectivity) - Validate the asset configuration for connectivity using supplied configuration <br>
 [geolocate ip](#action-geolocate-ip) - Queries IP2Location.io API for geolocation info
 
 ## action: 'test connectivity'
 
 Validate the asset configuration for connectivity using supplied configuration
 
-Type: **test** \
+Type: **test** <br>
 Read only: **True**
 
 #### Action Parameters
@@ -187,7 +187,7 @@ No Output
 
 Queries IP2Location.io API for geolocation info
 
-Type: **investigate** \
+Type: **investigate** <br>
 Read only: **True**
 
 #### Action Parameters
@@ -212,7 +212,7 @@ ______________________________________________________________________
 
 Auto-generated Splunk SOAR Connector documentation.
 
-Copyright 2025 Splunk Inc.
+Copyright 2026 Splunk Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

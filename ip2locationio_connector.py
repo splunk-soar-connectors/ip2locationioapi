@@ -1,6 +1,6 @@
 # File: ip2locationio_connector.py
 #
-# Copyright (c) IP2Location.io, 2024-2025
+# Copyright (c) IP2Location.io, 2024-2026
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -123,7 +123,7 @@ class Ip2LocationIoConnector(BaseConnector):
 
         self.save_progress("Connecting to endpoint")
         # make rest call
-        ret_val, response = self._make_rest_call("/", action_result, params=None, headers=None)
+        ret_val, _response = self._make_rest_call("/", action_result, params=None, headers=None)
 
         if phantom.is_fail(ret_val):
             self.save_progress("Test Connectivity Failed.")

@@ -16,12 +16,12 @@
             "name": "IP2Location.io"
         }
     ],
-    "license": "Copyright (c) IP2Location.io, 2024-2025",
+    "license": "Copyright (c) IP2Location.io, 2024-2026",
     "app_version": "1.0.2",
     "utctime_updated": "2025-04-14T18:54:51.681828Z",
     "package_name": "phantom_ip2locationio",
     "main_module": "ip2locationio_connector.py",
-    "min_phantom_version": "6.1.1",
+    "min_phantom_version": "6.3.0",
     "app_wizard_version": "1.0.0",
     "configuration": {
         "api_key": {
@@ -106,5 +106,11 @@
             },
             "versions": "EQ(*)"
         }
-    ]
+    ],
+    "pip39_dependencies": {
+        "wheel": []
+    },
+    "pip313_dependencies": {
+        "wheel": []
+    }
 }

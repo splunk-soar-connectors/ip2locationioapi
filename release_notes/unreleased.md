@@ -1,3 +1,1 @@
 **Unreleased**
-
-* Updated JSON example for the API results to show latest fields

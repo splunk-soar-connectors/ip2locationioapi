@@ -113,8 +113,16 @@ class Ip2LocationIoConnector(BaseConnector):
 
         try:
             r = request_func(url, verify=config.get("verify_server_cert", True), **kwargs)
+        except requests.exceptions.RequestException as e:
+            return RetVal(
+                action_result.set_status(phantom.APP_ERROR, f"Error connecting to IP2Location.io. Details: {type(e).__name__}"),
+                resp_json,
+            )
         except Exception as e:
-            return RetVal(action_result.set_status(phantom.APP_ERROR, f"Error Connecting to server. Details: {e!s}"), resp_json)
+            return RetVal(
+                action_result.set_status(phantom.APP_ERROR, f"Unexpected connection error. Details: {type(e).__name__}"),
+                resp_json,
+            )
 
         return self._process_response(r, action_result)
 

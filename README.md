@@ -162,6 +162,7 @@ This table lists the configuration variables required to operate IP2Location IO.
 VARIABLE | REQUIRED | TYPE | DESCRIPTION
 -------- | -------- | ---- | -----------
 **api_key** | required | password | IP2Location.io API key |
+**verify_server_cert** | optional | boolean | Verify the IP2Location.io server certificate |
 
 ### Supported Actions
 
